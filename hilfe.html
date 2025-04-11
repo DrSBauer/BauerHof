@@ -88,7 +88,11 @@
   data-wow-delay="0.1s"
 >
   <a href="index.html" class="navbar-brand p-0">
-    <img class="img-fluid me-3" src="img/Pferdekopf_Logo.png" alt="" />
+    <picture>
+        <source srcset="img/Pferdekopf_Logo.avif" type="image/avif">
+        <source srcset="img/Pferdekopf_Logo.webp" type="image/webp">
+        <img loading="lazy" class="img-fluid me-3" src="img/Pferdekopf_Logo.png" alt="">
+      </picture>
     <h1 class="m-0 text-primary">BauerHof-Wohratal</h1>
   </a>
   <button
