@@ -142,9 +142,15 @@
 
 /*** Header ***/
 .header-bg {
-    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/skima.png) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)),
+        image-set(
+            url(../img/skima.avif) type("image/avif"),
+            url(../img/skima.webp) type("image/webp"),
+            url(../img/skima.png) type("image/png")
+        ) center center no-repeat;
     background-size: cover;
 }
+
 
 .btn-play {
     position: relative;
